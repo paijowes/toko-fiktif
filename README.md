@@ -1,3 +1,4 @@
+
 # 🛒 Toko Fiktif - Mini E-Commerce Laravel + Tailwind
 
 Proyek ini adalah aplikasi Mini E-Commerce berbasis Laravel 10 dengan tampilan modern menggunakan Tailwind CSS dan autentikasi Laravel Breeze.
@@ -16,13 +17,15 @@ Proyek ini adalah aplikasi Mini E-Commerce berbasis Laravel 10 dengan tampilan m
 
 ## 📁 Struktur Folder Penting
 
+```
 resources/
 ├── views/
-│ ├── dashboard.blade.php # Dashboard pengguna
-│ ├── layouts/
-│ │ └── navigation.blade.php # Navigasi header
+│   ├── dashboard.blade.php        # Dashboard pengguna
+│   ├── layouts/
+│   │   └── navigation.blade.php   # Navigasi header
 routes/
-└── web.php # Daftar rute utama
+└── web.php                        # Daftar rute utama
+```
 
 ---
 
@@ -34,37 +37,52 @@ routes/
 ```bash
 composer install
 npm install && npm run dev
+
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
+```
 
-Jalankan server Laravel:
+3. Jalankan server Laravel:
+
+```bash
 php artisan serve
-Akses: http://localhost:8000
+```
 
-👤 Login & Register
-Akses menu Register untuk membuat akun
+Akses: [http://localhost:8000](http://localhost:8000)
 
-Setelah login, akan diarahkan ke /dashboard
+---
 
-Dashboard
+## 👤 Login & Register
+
+- Akses menu **Register** untuk membuat akun
+- Setelah login, akan diarahkan ke `/dashboard`
+
+---
+
+## 📌 Dashboard
+
 Menampilkan menu interaktif:
-Fitur	Ikon	URL
-🏠 Lihat Katalog	/	
-🛒 Keranjang	/cart	
-📦 Pesanan	/orders	
+
+| Fitur             | Ikon  | URL           |
+|------------------|-------|---------------|
+| 🏠 Lihat Katalog | `/`   |
+| 🛒 Keranjang     | `/cart` |
+| 📦 Pesanan       | `/orders` |
 
 Tombol didesain interaktif dengan gradient, animasi dan hover scaling.
 
-Saran Pengembangan Lanjutan
-Tambahkan model + migration untuk:
-Product, CartItem, Order
+---
 
-Buat panel admin untuk kelola produk
+## 💡 Saran Pengembangan Lanjutan
 
-Tambahkan sistem checkout dummy
+- Tambahkan model + migration untuk:
+  - `Product`, `CartItem`, `Order`
+- Buat panel admin untuk kelola produk
+- Tambahkan sistem checkout dummy
+- Integrasi middleware admin & verifikasi email
 
-Integrasi middleware admin & verifikasi email
+---
 
-Lisensi
+## 📝 Lisensi
 Open-source untuk keperluan pembelajaran dan pengembangan pribadi.
