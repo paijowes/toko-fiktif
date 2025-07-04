@@ -34,15 +34,11 @@ routes/
 ```bash
 composer install
 npm install && npm run dev
-
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
-Jalankan server Laravel:
 
-bash
-Copy
-Edit
+Jalankan server Laravel:
 php artisan serve
 Akses: http://localhost:8000
 
@@ -51,9 +47,8 @@ Akses menu Register untuk membuat akun
 
 Setelah login, akan diarahkan ke /dashboard
 
-📌 Dashboard
+Dashboard
 Menampilkan menu interaktif:
-
 Fitur	Ikon	URL
 🏠 Lihat Katalog	/	
 🛒 Keranjang	/cart	
@@ -61,9 +56,8 @@ Fitur	Ikon	URL
 
 Tombol didesain interaktif dengan gradient, animasi dan hover scaling.
 
-💡 Saran Pengembangan Lanjutan
+Saran Pengembangan Lanjutan
 Tambahkan model + migration untuk:
-
 Product, CartItem, Order
 
 Buat panel admin untuk kelola produk
@@ -72,5 +66,5 @@ Tambahkan sistem checkout dummy
 
 Integrasi middleware admin & verifikasi email
 
-📝 Lisensi
+Lisensi
 Open-source untuk keperluan pembelajaran dan pengembangan pribadi.
